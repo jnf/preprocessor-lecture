@@ -1,0 +1,18 @@
+<!-- Pretend we got this from a controller or something -->
+<% names = ["Pickles", "Raquel Welch's Grape Jam", "Grand Lord Snugglewumps",
+            "Thunderpaw the Destroyer", "Kitty Purry"] %>
+
+<!-- Technically correct, but really hard to read -->
+<div id="cats">
+<h2 class="cats-title">The Best Names for Cats</h2>
+<ol class="cats-list"><% names.each do |name| %><li class="cats-name"><%= name %></li><% end %></ol></div>
+
+<!-- The best of a bad bunch; using whitespace to increase legibility -->
+<div id="cats">
+  <h2 class="cats-title">The Best Names for Cats</h2>
+  <ol class="cats-list">
+    <% names.each do |name| %>
+      <li class="cats-name"><%= name %></li>
+    <% end %>
+  </ol>
+</div>

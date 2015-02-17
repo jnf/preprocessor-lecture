@@ -1,0 +1,15 @@
+- names = ["Pickles", "Raquel Welch's Grape Jam", "Grand Lord Snugglewumps","          Thunderpaw the Destroyer", "Kitty Purry"]
+
+#cats
+  %h2.cats-title The Best Names for Cats
+  %ol.cats-list
+    - names.each do |name|
+      %li.cats-name= name
+
+/ No:
+  / - wrapping ruby tags (use - for code and = for output instead of <% %>)
+  / - closing html tags (</h2>,</li>,</ol>)
+  / - unnecessary tags; haml assume 'div' unless you say otherwise
+  / - redundant attributes (use # for id and . for class)
+  / - and look at these minimal requirements for comments!
+/ After doing all that, we're left with only the most important bits
